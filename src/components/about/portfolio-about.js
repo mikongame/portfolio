@@ -1,3 +1,5 @@
+import './portfolio-about.css';
+
 export function createPortfolioAbout() {
   const section = document.createElement('section');
   section.classList.add('portfolio-about');

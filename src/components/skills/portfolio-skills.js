@@ -1,11 +1,12 @@
-import htmlIcon from '../assets/icons/html5.png';
-import cssIcon from '../assets/icons/CSS3.png';
-import jsIcon from '../assets/icons/js.png';
-import reactIcon from '../assets/icons/react.png';
-import mysqlIcon from '../assets/icons/mysql.png';
-import pythonIcon from '../assets/icons/python.png';
-import nlpIcon from '../assets/icons/nlp.png';
-import tableauIcon from '../assets/icons/tableau.png';
+import './portfolio-skills.css';
+import htmlIcon from '../../assets/icons/html5.png';
+import cssIcon from '../../assets/icons/CSS3.png';
+import jsIcon from '../../assets/icons/js.png';
+import reactIcon from '../../assets/icons/react.png';
+import mysqlIcon from '../../assets/icons/mysql.png';
+import pythonIcon from '../../assets/icons/python.png';
+import nlpIcon from '../../assets/icons/nlp.png';
+import tableauIcon from '../../assets/icons/tableau.png';
 
 export function createPortfolioSkills() {
   const section = document.createElement('section');

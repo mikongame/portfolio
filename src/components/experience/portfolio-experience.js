@@ -1,9 +1,9 @@
+import './portfolio-experience.css';
 export function createPortfolioExperience() {
   const section = document.createElement('section');
   section.classList.add('portfolio-experience');
   section.id = 'portfolio-experience';
 
-  // Heading with toggle inside
   const heading = document.createElement('h2');
   heading.classList.add('portfolio-section-title');
 
@@ -19,25 +19,24 @@ export function createPortfolioExperience() {
 
   heading.append(experienceBtn, separator, educationBtn);
 
-  // Content container
   const contentContainer = document.createElement('div');
   contentContainer.classList.add('portfolio-experience-content');
 
   const experiences = [
     {
-      title: 'Mikon Insights – Consultant in Marketing & People Analytics',
+      title: 'Consultant in Marketing & People Analytics - Mikon Insights',
       period: '2025 – Present'
     },
     {
-      title: 'Apps Factory – Android App Developer',
+      title: 'Android App Developer - PersonaCraft',
       period: '2025 – Present'
     },
     {
-      title: 'Rock{TheCode} – Full Stack Web Development',
-      period: '2024 – 2025'
+      title: 'Freelance Data Scientist',
+      period: '2023 – 2024'
     },
     {
-      title: 'Banco Sabadell – Data Scientist',
+      title: 'Data Scientist - Banco Sabadell',
       period: '2021 – 2022'
     }
   ];
@@ -75,10 +74,8 @@ export function createPortfolioExperience() {
     contentContainer.appendChild(ul);
   };
 
-  // Initial view: Experience
   renderList(experiences);
 
-  // Toggle logic
   experienceBtn.addEventListener('click', () => {
     experienceBtn.classList.add('active');
     educationBtn.classList.remove('active');
